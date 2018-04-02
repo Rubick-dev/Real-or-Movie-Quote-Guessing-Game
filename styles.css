@@ -7,10 +7,14 @@ body {
 }
 
 h1 {
-  background-color: #8bacbd;
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+.navbar {
+background: linear-gradient(to right, #8bacbd, #fa9581);
+}
+
 
 /* Into information */
 
@@ -65,21 +69,23 @@ h1 {
 
  .forthebutton {
    position: static;
+   margin-top: 350px;
+   
  }
 
   
 
 /* primary button */
 .btn-primary {
-  background-color: #90C3D4;
-  color: rgb(252, 244, 143);
-  border-color: #3276b1;
+  background-color: #8bacbd;
+  color: white;
+  border-color: #fa9581;
   border-radius: 25px;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active    {
-  background-color: #5EB4D1;
+  background-color: #fa9581;
   color: #285e8e;
-  border-color: #285e8e;
+  border-color: #8bacbd;
 }

@@ -1,1 +1,2 @@
 # Real-or-Movie-Quote-Guessing-Game
+This project is a one page document which is driven by Ajax and JSON to gather a quote through an API. This data is manipulated through javascript to make a game where users need to guess if a quote is from a Real World person or from a Movie Scene.
