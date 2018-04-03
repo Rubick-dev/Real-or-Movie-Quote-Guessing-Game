@@ -89,3 +89,16 @@ background: linear-gradient(to right, #8bacbd, #fa9581);
   color: #285e8e;
   border-color: #8bacbd;
 }
+
+footer {
+  margin-top: 200px;
+  text-align: right;
+  color: black;
+}
+
+#author {
+  color: black;
+  position: absolute;
+  bottom: 60%;
+  right: 180px;
+}
