@@ -1,3 +1,5 @@
+/* -- element css */
+
 body {
   color: #ffffff;
   background-color: #ffffff;
@@ -15,7 +17,11 @@ h1 {
 background: linear-gradient(to right, #8bacbd, #fa9581);
 }
 
-
+footer {
+  margin-top: 200px;
+  text-align: right;
+  color: black;
+}
 /* Into information */
 
 .circleDiv {
@@ -90,15 +96,19 @@ background: linear-gradient(to right, #8bacbd, #fa9581);
   border-color: #8bacbd;
 }
 
-footer {
-  margin-top: 200px;
-  text-align: right;
-  color: black;
-}
+
 
 #author {
   color: black;
   position: absolute;
   bottom: 60%;
   right: 180px;
+}
+
+.centreDiv {
+  position: static;
+  color: black;
+  margin-top: 250px;
+  height: 200px;
+  background-color: red;
 }
