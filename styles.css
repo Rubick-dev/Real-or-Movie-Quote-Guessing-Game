@@ -1,88 +1,58 @@
 /* -- element css */
 
 body {
-  color: #ffffff;
+  color: #000;
   background-color: #ffffff;
   margin: 100px 0;
   text-align: center;
   height: 100%;
 }
 
-h1 {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
+/* Class selectors */
 
 .navbar {
 background: linear-gradient(to right, #8bacbd, #fa9581);
 }
 
-footer {
-  margin-top: 200px;
-  text-align: right;
-  color: black;
-}
-/* Into information */
-
-.circleDiv {
-  position: relative;
-  display:flex;
-  height: 100%;
-  align-items: center;
-  }
-
-.real,
-.movie {
-  border-radius: 50%;
-  max-width: 60%;
-  position: absolute;
-  opacity: .9;
-  height: 300px;
-  justify-content: center;
-}
-
-.real {
-  background-color:#fa9581;
-  left: 0;
-  top: 0;
-  right: 40%;
-  bottom: 0;
-}
-
-.movie {
-  background-color: #8bacbd;
-  left: 40%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.instructions {
-  color: white;
-  position: absolute;
-  z-index: 5;
-  top: 33%;
-  left: 15%;
-  right: 15%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0);
-}
-
-.lead {
-  font-size: 1rem;
+.quoteTextDiv {
+  Height: 200px;
+  padding: 0;
+  margin-bottom: 20px;
+  border: 3px solid #8bacbd;
+  background-color: #fa9581;
   align-content: center;
- }
+}
 
- .forthebutton {
-   position: static;
-   margin-top: 350px;
-   
- }
+.quotetext {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); 
+}
 
-  
+.authortext {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); 
+}
+
+
+.buttonsDiv {
+  margin-bottom: 40px;
+}
+
+.infoTextBox {
+  border: 3px solid #fa9581;
+  background-color: #8bacbd;
+  height: 120px;
+  text-align: left;
+}
+
+/* ID selectors */
+
+
 
 /* primary button */
-.btn-primary {
+/* .btn-primary {
   background-color: #8bacbd;
   color: white;
   border-color: #fa9581;
@@ -96,19 +66,3 @@ footer {
   border-color: #8bacbd;
 }
 
-
-
-#author {
-  color: black;
-  position: absolute;
-  bottom: 60%;
-  right: 180px;
-}
-
-.centreDiv {
-  position: static;
-  color: black;
-  margin-top: 250px;
-  height: 200px;
-  background-color: red;
-}

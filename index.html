@@ -7,73 +7,92 @@
   <title>Famous Person or Movie Star Quotes?</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 </head>
+
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-sm navbar-dark"> <!-- Start of Navbar -->
-      <a class="navbar-brand" href="#"><img src="" width="50px" height="50px" alt=""></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link mr-5" href="#">Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ml-5 mr-5" href="#">Famous</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ml-5 mr-5" href="#">Movie</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ml-5 mr-5" href="#">Twitter</a>
-          </li>
-        </ul>
+  <nav class="navbar fixed-top navbar-expand-sm navbar-light"> <!-- Navbar Start -->
+    <a class="navbar-brand" href="#"><img src="guessicon.png" width="50px" height="50px" alt="Icon of the Quote Guessing Game"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link mr-5" href="#">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ml-5 mr-5" href="#">Twitter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ml-5 mr-5" href="#">Current Score:</a>
+        </li>
+      </ul>
+    </div>
+  </nav> <!-- End of Navbar -->
+
+
+  <div class="container"> <!--Start of Page Container Div -->
+    
+    <div class="row"> <!-- Start of page heading -->
+      <div class="col-1"></div>
+      <div class="col-10">
+          <h1 class="title">The Quote Guessing Game</h1>
       </div>
-    </nav> <!-- end of navbar --> 
+      <div class="col-1"></div>
+    </div> <!-- End of Heading -->
+    
 
-    <div class="container"> <!--Start of Container Div -->
-      
-      <div class="circleDiv">
-        <div class="left">
-          <h1 class="real">Famous Person?</h1>
-        </div>
-        <div class="right">
-          <h1 class="movie">Movie Star?</h1>
-        </div>
-        <div class="centreDiv">
-          
-        </div>
-      </div> <!-- End of CircleDiv -->
-
-      <div class="instructions">
-        <p id="lead" class="lead">The Random Quote Guessing Game - Choose if the generated quote was said by someone famous or a movie star from the scene of a movie.</p>
+    <div class="row">       <!-- Start of quote box section -->
+      <div class="col-1"></div>
+      <div class="col-10 quoteTextDiv">
+            <div class="quotetext">
+              <span id="quote"></span>
+            </div>
+            <div class="authortext">
+              <span id="author" class="font-italic"></span>
+            </div>
       </div>
-      <div class="author">
-        <p id="author">Site Designed by Rubick-dev</p>
+      <div class="col-1"></div>
+    </div> <!-- End of Quote box area -->
+
+
+    <div class="row buttonsDiv"> <!-- Start of Buttons section -->
+      <div class="col-3">
+        <button id="begin" type="button" class="btn btn-primary btn-lg">Begin</button>
       </div>
-    </div> <!-- End of container -->
-
-    <div class="container"> <!-- Start of Buttons Container -->
-      <div class="forthebutton"> <!-- get started Button -->
-        <a id="btn" class="btn btn-primary btn-lg" href="#" role="button">Get Quote</a>
+      <div class="col-3">
+        <button type="button" class="btn btn-secondary btn-lg">Famous</button>
       </div>
-      <div> <!-- Guessing buttons -->
-        <a id="btnFamous" class="btn btn-outline-primary btn-lg d-none" href="#" role="button">Famous</a>
-        <a id="btnMovie" class="btn btn-outline-danger btn-lg d-none" href="#" role="button">Movie</a>
+      <div class="col-3">
+        <button type="button" class="btn btn-success btn-lg">Movie</button>
       </div>
-    </div> <!-- End of Buttons Container -->
+      <div class="col-3">
+        <button type="button" class="btn btn-danger btn-lg">Next</button>
+      </div>
+    </div> <!-- End of Buttons section -->
 
-    <footer>
-      <h6 class="text-center">Powered by <a href="andrux.net">Andrux</a></h6>
-    </footer>  
 
+    <div class="row"> <!-- Start of Instructions Area -->
+      <div class="col-1"></div>
+      <div class="col-8">
+        <div class="infoTextBox">
+          <p>Hello World</p>
+          <h6 class="text-center">Powered by <a href="andrux.net">Andrux</a></h6>
+          </div>
+      </div>
+      <div class="col-2 resetButton">
+          <button type="button" class="btn btn-warning btn-lg">Finish</button>
+      </div>
+      <div class="col-1"></div>
+    </div> <!-- End of Instructions Section -->
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </div> <!-- End of Page container  -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="app.js"></script>
+
 </body>
 </html>

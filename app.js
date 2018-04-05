@@ -12,7 +12,7 @@ $.ajax({
     let authorRtn = data.author;
     var categoryRtn = data.category;
     console.log(quoteRtn + " " + data.author + " " + categoryRtn);   
-    $("#lead").text("Quote: " + quoteRtn + "\""); 
+    $("#quote").text("Quote: " + quoteRtn + "\""); 
     $("#author").text("- " + authorRtn);
        },
     error: function(err) { alert(err); },
@@ -22,13 +22,13 @@ $.ajax({
     
 
 $(document).ready(function() {
-// When click on GetStarted button need to show the option buttons and display the first Quote.
-  const getStarted = document.getElementById("btn");
-  // Event Listners
+// When clicking on the Begin button you need to show the option buttons and display the first Quote.
+  const getStarted = document.getElementById("begin");
+  // Event Listeners
   
-  getStarted.addEventListener("click", function(){
-    document.getElementById("btnFamous").classList.remove("d-none");
-    document.getElementById("btnMovie").classList.remove("d-none");
+  getStarted.addEventListener('click', function(){
+    // document.getElementById("btnFamous").classList.remove("d-none");
+    // document.getElementById("btnMovie").classList.remove("d-none");
     doIt();
   });
 
