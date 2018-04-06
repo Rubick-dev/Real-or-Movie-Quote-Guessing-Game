@@ -1,5 +1,5 @@
 
-const API_Key = "hhrAFEu9VLmshYEoZq51oSTYBHUIp1XokeGjsnITfzcjZD0nqK";
+const API_Key = "EsjBYf9RUCmshoQyaakojVxqaLTbp1py0ddjsnmoJ4KSUa0p33";
 var categoryRtn = "";
 var scoreCounter = 0;
 var guessCounter = 0;
