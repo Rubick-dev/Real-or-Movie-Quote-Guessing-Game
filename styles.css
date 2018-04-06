@@ -1,11 +1,13 @@
 /* -- element css */
 
 body {
-  color: #000;
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #fff;
   background-color: #ffffff;
   margin: 100px 0;
   text-align: center;
   height: 100%;
+  min-width: 480;
 }
 
 /* Class selectors */
@@ -14,7 +16,16 @@ body {
 background: linear-gradient(to right, #8bacbd, #fa9581);
 }
 
+.title {
+  font-family: 'Luckiest Guy', cursive;
+  margin: 50px;
+  color: #8bacbd;
+  font-size: 3rem;
+}
+
 .quoteTextDiv {
+  font-family: 'Boogaloo', cursive;
+  font-size: 2rem;
   Height: 200px;
   padding: 0;
   margin-bottom: 20px;
@@ -35,7 +46,6 @@ background: linear-gradient(to right, #8bacbd, #fa9581);
   transform: translateY(-50%); 
 }
 
-
 .buttonsDiv {
   margin-bottom: 40px;
 }
@@ -43,8 +53,32 @@ background: linear-gradient(to right, #8bacbd, #fa9581);
 .infoTextBox {
   border: 3px solid #fa9581;
   background-color: #8bacbd;
+  color: #000;
   height: 120px;
   text-align: left;
+}
+
+.finishButton {
+  margin-bottom: 15px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); 
+}
+
+.infoTextBox > p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+  padding-right: 35px;
+}
+
+.andrux {
+  color: #000;
+  text-align: right;
+  font-size: .8rem;
+  margin-top: 15px;
+  padding-right: 250px;
 }
 
 /* ID selectors */
@@ -52,17 +86,31 @@ background: linear-gradient(to right, #8bacbd, #fa9581);
 
 
 /* primary button */
-/* .btn-primary {
+ .btn-dark {
   background-color: #8bacbd;
   color: white;
   border-color: #fa9581;
   border-radius: 25px;
 }
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active    {
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active    {
   background-color: #fa9581;
   color: #285e8e;
   border-color: #8bacbd;
+}
+
+.btn-success {
+  background-color: #fa9581;
+  color: white;
+  border-color: #8bacbd;
+  border-radius: 25px;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active    {
+  background-color: #8bacbd;
+  color: #285e8e;
+  border-color: #fa9581;
 }
 
